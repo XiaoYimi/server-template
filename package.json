@@ -4,7 +4,12 @@
   "description": "使用 Koa + MongoDB + SMTP 等依赖，从 0 到 1 构建后端框架模板.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "test": "pm2 start pm2.config.js --env test",
+    "dev": "pm2 start pm2.config.js --env dev",
+    "pro": "pm2 start pm2.config.js --env pro",
+    "stop": "pm2 stop pm2.config.js",
+    "log": "pm2 logs"
   },
   "keywords": [
     "JS",
@@ -16,5 +21,17 @@
     "Smtp"
   ],
   "author": "chenfengbukeyimi",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.12.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-helmet": "^5.2.0",
+    "koa-jwt": "^4.0.0",
+    "koa-router": "^8.0.8",
+    "koa-static-cache": "^5.1.3",
+    "koa2-cors": "^2.0.6",
+    "log4js": "^6.2.1"
+  }
 }
