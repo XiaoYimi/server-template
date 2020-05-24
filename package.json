@@ -1,0 +1,20 @@
+{
+  "name": "server-template",
+  "version": "1.0.0",
+  "description": "使用 Koa + MongoDB + SMTP 等依赖，从 0 到 1 构建后端框架模板.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JS",
+    "Node",
+    "Nodejs",
+    "Koa",
+    "Mongoose",
+    "MongoDB",
+    "Smtp"
+  ],
+  "author": "chenfengbukeyimi",
+  "license": "ISC"
+}
