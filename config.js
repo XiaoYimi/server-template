@@ -42,6 +42,11 @@ module.exports = {
         return (+new Date()) + 60 * 1000 /* 验证码有效期 60 s */
       }
     } 
-  }
+  },
 
+  /* Token */
+  Token: {
+    hour: 6, /* 有效时长 */
+    expire () { { return (+new Date()) + (1000 * 60 * 60 * this.hour) } }
+  }
 }

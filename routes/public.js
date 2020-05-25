@@ -5,6 +5,6 @@ const Controllers = require('../controllers')
 
 const router = new Router({ prefix: '/api' })
 
-router.get('/testpublic', Controllers.test.testpublic)
+router.get('/login', Controllers.login.login)
 
 module.exports = router
