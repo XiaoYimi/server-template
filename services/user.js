@@ -1,8 +1,13 @@
 const UserModel = require('../models/index').getModel('user')
 
 const user = {
-  async login (condition) {
-    const res = await UserModel.findOne(condition)
+  /* condition: { username, password } */
+  async isExistsUser (query) {
+    const res = await UserModel.findOne(query)
+    return res
+  },
+  async createUser (document) {
+    const res = await UserModel.create(document) 
     return res
   }
 }

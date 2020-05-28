@@ -7,4 +7,6 @@ const router = new Router({ prefix: '/api' })
 
 router.get('/login', Controllers.login.login)
 
+router.get('/getcode', Controllers.login.getcode)
+
 module.exports = router
