@@ -29,7 +29,7 @@ module.exports = {
   SMTP: {
     host: 'smtp.qq.com', /* 不得更改 */
     user: '2590856083@qq.com', /* 发送发邮箱 */
-    pass: 'bcarlbrfsgzhdifj' /* 邮箱(发送)授权口令(上线必须添加,github 必须隐藏) */
+    pass: 'bcarlbrfsgzhdi' /* 邮箱(发送)授权口令(上线必须添加,github 必须隐藏) */
   },
 
   // 验证码
